@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formular - Home Sweet Home</title>
+
+    <!-- change to IE responisve-->
+    <!-- <style>
+        @media all and (-ms-high-contrast:none) {
+
+            *::-ms-backdrop,
+            .slider {
+                justify-content: center;
+                /* padding: 10px; */
+            }
+        }
+    </style> -->
+
+    <style>
+        /* change to IE slider*/
+        @media all and (-ms-high-contrast:none) {
+
+            *::-ms-backdrop,
+            .big-text,
+            .photo {
+                display: inline;
+                overflow: hidden;
+            }
+        }
+
+
+        /* change colors materialize datapicker */
+        [type="checkbox"].filled-in:checked+span:not(.lever):after {
+            background-color:
+                #8cbbe5;
+            border:
+                2px solid #8cbbe5;
+            ;
+        }
+
+        [type="checkbox"]:checked+span:not(.lever):before {
+            border-bottom:
+                2px solid #8cbbe5;
+            border-right:
+                2px solid #8cbbe5;
+        }
+
+        .dropdown-content li>span {
+            color:
+                #8cbbe5;
+        }
+
+        .datepicker-date-display {
+            background-color:
+                #8cbbe5;
+        }
+
+        .datepicker-done {
+            color:
+                #8cbbe5;
+        }
+
+        .datepicker-cancel {
+            color:
+                #8cbbe5;
+        }
+
+        .datepicker-today {
+            color:
+                red;
+        }
+
+        .datepicker-table td.is-selected {
+            background-color:
+                #8cbbe5;
+        }
+
+        .datepicker-table td.is-today {
+            color:
+                #8cbbe5;
+        }
+
+        .row .col.l4.m6.s12 {
+            padding: 10px;
+        }
+
+        .formular .title-formular span {
+            display: block;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 400;
+            color: #8cbbe5;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        @font-face {
+            font-family: 'BloggerSans';
+            src: url('fonts/BloggerSans.eot');
+            /* IE9 Compat Modes */
+            src: url('fonts/BloggerSans.eot?#iefix') format('embedded-opentype'),
+                /* IE6-IE8 */
+                url('fonts/BloggerSans.woff') format('woff'),
+                /* Modern Browsers */
+                url('fonts/BloggerSans.ttf') format('truetype'),
+                /* Safari, Android, iOS */
+                url('fonts/BloggerSans.svg#BloggerSans') format('svg');
+            /* Legacy iOS */
+            font-style: normal;
+            font-weight: normal;
+            text-rendering: optimizeLegibility;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="container">
+        <header>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="zusammenarbeit.html">Zusammenarbeit</a>
+                    </li>
+                    <li>
+                        <a href="#formular.html">Formular</a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <section class="slider" id="home"> -->
+            <section class="slider">
+                <div class="big-text">
+                    <h1>HOME<br><span>SWEET</span><br>HOME</h1>
+                    <div class="small-text">
+                        <p>“Überall ist es schön,
+                            <br>
+                            aber am schönsten ist es zu Hause”
+                        </p>
+                        <div class="small-text-two">
+                            <p>-Haushaltshilfe für
+                                <br>
+                                pflegedürftige Menschen"
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="img/img1.png" alt="für ältere Menschen in Luxemburg Pflege">
+                </div>
+
+            </section>
+
+
+        </header>
+        <main class="home">
+            <div class="textanddescription">
+                <p>formular</p>
+            </div>
+            <div class="formular form-steps">
+                <form action="">
+
+                    <!-- page I -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 7</div>
+                        <div class="title-formular">
+                            <span>I.</span>
+                            <span>Leistungsnehmer - eine oder zwei Personen (im gemeinsamen Haushalt lebend)
+                                :</span>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col l4 m6 s12">
+                                <input id="vorname" type="text" class="validate">
+                                <label for="vorname">Vorname</label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <input id="nachname" type="text" class="validate">
+                                <label for="nachname">Nachname</label>
+                            </div>
+
+                            <!-- pickdate for and id-->
+
+                            <div class="input-field col l4 m6 s12">
+                                <input type="text" class="datepicker">
+                                <label for="datepicker">Geburtsdatum</label>
+                            </div>
+
+                            <div class="input-field col l4 m6 s12">
+                                <input id="strasse" type="text" class="validate">
+                                <label for="strasse">Strasse und Hausnummer</label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <input id="ort" type="text" class="validate">
+                                <label for="ort">Ort</label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <input id="post" type="text" class="validate">
+                                <label for="post">Postleitzahl</label>
+                            </div>
+
+                            <div class="input-field col l4 m6 s12">
+                                <input id="familienstand" type="text" class="validate">
+                                <label for="familienstand">Familienstand</label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <input id="telefonnummer" type="number" class="validate">
+                                <label for="telefonnummer">Telefonnummer</label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <input id="Mobilenummer" type="number" class="validate">
+                                <label for="Mobilenummer">Mobilenummer</label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <input id="e-mail" type="email" class="validate">
+                                <label for="e-mail">e-mail</label>
+                            </div>
+
+                            <!-- I page - second person -->
+                            <div class="input-field col s12">
+                                <ul class="collapsible" data-collapsible="accordion">
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <i class="material-icons">person_add</i>Zweite Person</div>
+                                        <div class="collapsible-body">
+                                            <div class="row">
+                                                <div class="input-field col l4 m6 s12">
+                                                    <input id="vorname two" type="text" class="validate">
+                                                    <label for="vorname two">Vorname</label>
+                                                </div>
+                                                <div class="input-field col l4 m6 s12">
+                                                    <input id="nachname_two" type="text" class="validate">
+                                                    <label for="nachname_two">Nachname</label>
+                                                </div>
+
+                                                <!-- USTAWIANIE DATY NAPRAWIC -->
+                                                <div class="input-field col l4 m6 s12">
+                                                    <input type="text" class="datepicker" />
+                                                    <label for="datepicker">Geburtsdatum</label>
+                                                </div>
+                                                <div class="input-field col l4 m6 s12">
+                                                    <input id="Mobilenummer_two" type="number" class="validate">
+                                                    <label for="Mobilenummer_two">Mobilenummer</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- slider div ponizej -->
+                    </div>
+
+
+                    <!-- page II -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 7</div>
+
+                        <div class="title-formular">
+                            <span>II.</span>
+                            <span>Ansprechperson</span>
+                        </div>
+                        <!-- FORMULARZ -->
+
+                        <div class="row">
+
+                            <div class="input-field col l4 m6 s12">
+                                <input id="vorname1" name="nachnameansprech" type="text" class="validate">
+                                <label for="pname">Vorname</label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <input name="nachnameansprech" id="nachname1" type="text" class="validate">
+                                <label for="pname">Nachname</label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <input type="text" name="strasseansprech" id="strasse" class="datepicker" />
+                                <label for="pname">Strasse und Hausnummer</label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <input name="ortansprech" id="ort" type="text" class="validate">
+                                <label for="pname">Ort</label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <input name="postansprech" id="post1" type="text" class=" validate">
+                                <label for="pname">Postleitzahl</label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <input name="telefonnummeransprech" id="Telefonnummer1" type="number" class="validate">
+                                <label for="pname">Telefonnummer</label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <input name="mobilenummeransprech" id="Mobilenummer1" type="number" class="validate">
+                                <label for="pname">Mobilenummer</label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <input name="emailansprech" id="email3" type="email" class="validate">
+                                <label for="pname">e-mail</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- page III -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 7</div>
+
+                        <div class="title-formular">
+                            <span>III.</span>
+                            <span>Angaben zum Leistungsnehmer und zum Haushalt</span>
+                        </div>
+                        <!-- FORMULARZ -->
+
+                        <div class="row">
+                            <!-- tytul  -->
+                            <div class="input-field col s12">
+                                <label for="pname">Angehörige</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>leben im gemeinsamen Haushalt</span>
+                                </label>
+                            </div>
+                            <div class="input-field col s12">
+                                <label>
+                                    <input type="checkbox" class="filled-in" data-target="#agbn564"
+                                        onclick="toggle_visibility('agbn564');" />
+                                    <span>kommen zu Besuch (wie oft)</span>
+                                </label>
+                            </div>
+                            <div id="agbn564" class="input-field col s12" style="display: none;">
+                                <textarea class="move-to" data-move-to="#angaben-conterier" id="angaben1"
+                                    name="wieoftbesuch"></textarea>
+                            </div>
+
+                            <!-- kwadratowe  tytul -->
+                            <div class="input-field col s12">
+                                <label for="pname">Gesundheitsmerkmale</label>
+                            </div>
+
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="alzheimer"
+                                        value="Alzheimer" />
+                                    <span>Alzheimer</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="bettlagerig"
+                                        value="Bettlägerig" />
+                                    <span>Bettlägerig</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="ms" value="MS-Patient" />
+                                    <span>MS-Patient</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="gehbehindert"
+                                        value="Gehbehindert" />
+                                    <span>Gehbehindert</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="dauerkatheter"
+                                        value="Dauerkatheter" />
+                                    <span>Dauerkatheter</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="probleme"
+                                        value="Probleme mit der Speiseröhre" />
+                                    <span>Probleme mit der Speiseröhre</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="Schwerhorigkeit"
+                                        value="Schwerhörigkeit" />
+                                    <span>Schwerhörigkeit</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="Herz"
+                                        value="Herz-Kreislauferkrankungen" />
+                                    <span>Herz-Kreislauferkrankungen</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="Tumor" value="Tumor" />
+                                    <span>Tumor</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="dekubitus"
+                                        value="Dekubitus (Druckgeschwür)" />
+                                    <span>Dekubitus (Druckgeschwür)</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="inkontenz"
+                                        value="Inkontinenz" />
+                                    <span>Inkontinenz</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="geistig"
+                                        value="Geistig behindert" />
+                                    <span>Geistig behindert</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="demenz" value="Demenz" />
+                                    <span>Demenz</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="stoma"
+                                        value="Stoma (Darmaausgang/Urinausleitung)" />
+                                    <span>Stoma (Darmaausgang/Urinausleitung)</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="inkonti"
+                                        value="Inkontinentzhilfsmittel-Träger" />
+                                    <span>Inkontinentzhilfsmittel-Träger</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="bluthchdruck"
+                                        value="Bluthochdruck" />
+                                    <span>Bluthochdruck</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="diabetes"
+                                        value="Diabetes" />
+                                    <span>Diabetes</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" id="parkinson"
+                                        value="Parkinson" />
+                                    <span>Parkinson</span>
+                                </label>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>
+                                    <input type="checkbox" name="gesundheitsmerkmale[]" class="js-radio"
+                                        data-target="#sontage" onclick="toggle_visibility('sontage');" />
+                                    <span>sonstige Krankheiten, bitte Erläutern</span>
+                                </label>
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea id="sontage" name="einsatzdauer"
+                                    style="min-height: 200px; min-width: 100%; display:none;"></textarea>
+                            </div>
+
+
+                            <!-- trzecie tytul  -->
+                            <div class="input-field col s12">
+                                <label for="pname">Uberwachung in der Nacht</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>nein</span>
+                                </label>
+                            </div>
+                            <div class="input-field col s12">
+                                <label>
+                                    <input type="checkbox" class="filled-in" data-target="#wenn123"
+                                        onclick="toggle_visibility('wenn123');" />
+                                    <span>Wenn ja, wie sollte dies ablaufen?</span>
+                                </label>
+
+                            </div>
+
+                            <div class="input-field col s12" id="wenn123" style="display: none;">
+                                <textarea name="nightcaredetails"></textarea>
+                            </div>
+
+                            <div class="clearfix"></div>
+                            <div class="input-field col s12">
+                                <label>Nachtruhe</label>
+                            </div>
+                            <div class="input-field col s12">
+
+                                <select name="nachtruhe">
+                                    <option value="ungesört">ungesört</option>
+                                    <option value="gelegentlich gestört">gelegentlich gestört</option>
+                                    <option value="oft erhebliche Unruhe">oft erhebliche Unruhe</option>
+                                    <option value="regelmässige nächtliche Betreuung">regelmässige nächtliche Betreuung
+                                    </option>
+                                </select>
+
+                            </div>
+
+                            <div class="input-field col s12">
+                                <label>Desorientierung</label>
+                                <br>
+
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="desorientierung[]" value="zur Zeit">
+                                        <span>zur Zeit</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="desorientierung[]" value="zur Person">
+                                        <span>zur Person</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="desorientierung[]" value="zum Ort">
+                                        <span>zum Ort</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <label for="pname">Fitness</label>
+                                <br>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="angehoben[]"
+                                            value="Die betreute Person muss nicht angehoben werden">
+                                        <span>Die betreute Person muss nicht angehoben werden</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="angehoben[]"
+                                            value="Die betreute Person muss angehoben werden">
+                                        <span>Die betreute Person muss angehoben werden</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="angehoben[]"
+                                            value="Die betreute Person kann mithelfen">
+                                        <span>Die betreute Person kann mithelfen</span>
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="input-field col s12">
+                                <label>Es bestehen Hilfsmittel:</label>
+                                <br>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="hilfsmittel[]" id="hebegurt" value="Hebegurt">
+                                        <span>Hebegurt</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="hilfsmittel[]" id="hebesitz" value="Hebesitz">
+                                        <span>Hebesitz</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="hilfsmittel[]" id="patient" value="Patientenlift">
+                                        <span>Patientenlift</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="hilfsmittel[]" class="js-radio"
+                                            data-target="#andere" value="andere" onclick="toggle_visibility('andere');">
+                                        <span>andere</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div id="andere" class="input-field col s12" style="display: none">
+                                <textarea name="Arbeit"></textarea>
+                            </div>
+                            <div class="input-field col s12">
+                                <label for="pname">Arbeit im Haushalt:</label>
+                                <br>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="haushaltarbeit[]" id="bei-eintreffen"
+                                            value="Grundreinigung bei Eintreffen notwendig">
+                                        <span>Grundreinigung bei Eintreffen notwendig</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="haushaltarbeit[]" id="bugeln" value="Bügeln">
+                                        <span>Bügeln</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="haushaltarbeit[]" id="saubermachen"
+                                            value="Saubermachen">
+                                        <span>Saubermachen</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input class="input-field col l2 m2 s2" type="number" name="kochen"
+                                            id="radioname874" value="Kochen" id="textf18" autocomplete="off"
+                                            style="float: right; margin-top: -12px;">
+                                        <span style="font-size: 15px;">Kochen (für wie viele Personen?):</span>
+                                    </label>
+                                </div>
+                                <div class=" input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="haushaltarbeit[]" class="js-radio" value="Waschen">
+                                        <span>Waschen</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="haushaltarbeit[]" class="js-radio"
+                                            value="Einkaufen">
+                                        <span>Einkaufen</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12" id="oneone">
+                                    <label>
+                                        <input class="input-field col l2 m2 s2" type="number" name="flachen"
+                                            id="textf17" autocomplete="off" style="float: right; margin-top: -12px;">
+                                        <span style="font-size: 15px;">Flächen zum Sauberhalten:</span>
+                                    </label>
+
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" class="js-radio" data-target="#andere463"
+                                            name="haushaltarbeit[]" id="radioname" value="andere"
+                                            onclick="toggle_visibility('andere463');">
+                                        <span>andere (bitte auflisten)</span>
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="input-field col s12" id="andere463"
+                                    style="display: none; margin-top: 30px;">
+                                    <textarea name=" anderehaushaltarbeit"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="input-field col l4 m6 s12">
+                                <label>Garten vorhanden</label>
+                                <br>
+                                <select name="garten">
+                                    <option value="ja">ja</option>
+                                    <option value="nein">nein</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field col l4 m6 s12">
+                                <label>Interet vorhanden</label>
+                                <br>
+                                <select name="internet">
+                                    <option value="ja">ja</option>
+                                    <option value="nein">nein</option>
+                                </select>
+                            </div>
+                            <div class="input-field col l4 m6 s12">
+                                <label>Hierzu: leichte Gartenarbeiten</label>
+                                <br>
+                                <select name="leichtegartenarbeiten">
+                                    <option value="ja">ja</option>
+                                    <option value="nein">nein</option>
+                                </select>
+                            </div>
+
+
+                            <div class="input-field col l4 m6 s12">
+                                <div class="input-field col s12">
+                                    <label>
+                                        <input type="checkbox" name="hometype" id="haus" value="Haus">
+                                        <span>Haus</span>
+                                    </label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <label>
+                                        <input type="checkbox" name="hometype" id="wohnung" value="Wohnung">
+                                        <span>Wohnung</span>
+                                    </label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <label>
+                                        <input type="checkbox" name="haustiere" class="js-radio"
+                                            data-target="#hausterie564" value="ja"
+                                            onclick="toggle_visibility('hausterie564');">
+                                        <span>Haustiere -wenn ja, welche</span>
+                                    </label>
+                                </div>
+                                <br>
+                            </div>
+                            <div id="hausterie564" class="input-field col s12" style="display: none;">
+                                <textarea name="haustieredetails"></textarea>
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                    <!-- END III -->
+
+                    <!-- IV -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 7</div>
+
+                        <div class="title-formular">
+                            <span>IV.</span>
+                            <span>Leistungen des Leistungsnehmers (bei stets freier Kost und Logis für die
+                                Betreuerin) *</span>
+                        </div>
+                        <!-- FORMULARZ -->
+                        <div class="row">
+
+                            <div class="input-field col s12">
+                                <label for="pname">Freizeit (je nach
+                                    Möglichkeit und Absprache):</label>
+                                <br>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="freizeit[]" id="radioname"
+                                            value="Stundenweise Tägliche Freizeit">
+                                        <span>Stundenweise Tägliche Freizeit</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="freizeit[]" id="ein-voller"
+                                            value="ein voller freier Tag in der Woche">
+                                        <span>ein voller freier Tag in der Woche</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="freizeit[]" id="ein-volles"
+                                            value="ein volles freies Wochenenede pro Monat">
+                                        <span>ein volles freies Wochenenede pro Monat</span>
+                                    </label>
+                                </div>
+
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="freizeit[]" id="urlab"
+                                            value="Urlaub nach Absprache bei Langzeitbetreuung">
+                                        <span>Urlaub nach Absprache bei Langzeitbetreuung</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- END IV -->
+
+
+                    <!-- V -->
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 7</div>
+
+                        <div class="title-formular">
+                            <span>V.</span>
+                            <span>Erwartungen an die polnische Betreuerin (mit Verständigungsmöglichkeit):</span>
+                        </div>
+                        <!-- FORMULARZ -->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="pname">Einsantzbeginn</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <textarea name="einsantzbeginn"
+                                    style="min-height: 200px; min-width: 100%;border: 3px solid #ff0000 !important;"></textarea>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <label for="pname">Vorausgesehene Einsatzdauer</label>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <textarea name="einsatzdauer" style="min-height: 200px; min-width: 100%;"></textarea>
+                            </div>
+
+                            <div class="input-field col l4 m6 s12">
+                                <label for="pname">Alter</label>
+                                <br>
+                                <select name="alter">
+                                    <option value="25-30">25-30</option>
+                                    <option value="30-40">30-40</option>
+                                    <option value="40-50">40-50</option>
+                                    <option value="50-60">50-60</option>
+                                    <option value="egal">egal</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field col l4 m6 s12">
+                                <label>Geschlecht</label>
+                                <br>
+                                <select name="geschlecht">
+                                    <option value="Weiblich">Weiblich</option>
+                                    <option value="männlich">männlich</option>
+                                    <option value="Egal">Egal</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field col l4 m6 s12">
+                                <label>Kräftige Person</label>
+                                <br>
+                                <select name="kraftige">
+                                    <option value="egal">egal</option>
+                                    <option value="ja, weil schwergewichtiger Patient">ja, weil schwergewichtiger
+                                        Patient</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field col l4 m6 s12">
+                                <label>Führerschein mit Fahrpraxis</label>
+                                <br>
+                                <select name="fuhrerschein">
+                                    <option value="ja, wichtig">ja, wichtig</option>
+                                    <option value="gern gesehen">gern gesehen</option>
+                                    <option value="egal">egal</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field col l4 m6 s12">
+                                <label>Referenzen Zeugnisse</label>
+                                <br>
+                                <select name="referenzen">
+                                    <option value="ja, wichtig">ja, wichtig</option>
+                                    <option value="gern gesehen">gern gesehen</option>
+                                    <option value="egal">egal</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field col l4 m6 s12">
+                                <label>Nichttraucherin</label>
+                                <br>
+                                <select name="nichttraucherin">
+                                    <option value="ja, wichtig">ja, wichtig</option>
+                                    <option value="egal">egal</option>
+                                </select>
+
+                            </div>
+
+                            <div class="input-field col l4 m6 s12">
+                                <label>Tierlieb</label>
+                                <br>
+                                <select name="tierlieb">
+                                    <option value="ja, wichtig">ja, wichtig</option>
+                                    <option value="egal">egal</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- END V -->
+
+                    <!-- VI -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 7</div>
+
+                        <div class="title-formular">
+                            <span>VI.</span>
+                            <span>Die Gegebenheiten</span>
+                        </div>
+                        <!-- FORMULARZ  -->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="pname">Ausser einem eigenen Zimmer hat die Betreuerin:</label>
+                                <br>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" class="js-radio" name="zimmer"
+                                            value="ein eigenes Badezimmer">
+                                        <span>ein eigenes Badezimmer</span>
+                                    </label>
+                                </div>
+
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" class="js-radio" name="zimmer"
+                                            value="sie teilt ein Badezimmer mit den Hausbewohnern">
+                                        <span>sie teilt ein Badezimmer mit den Hausbewohnern</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="zugang[]" id="den-inter" value="den Internezugang">
+                                        <span>den Internezugang</span>
+                                    </label>
+                                </div>
+
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="zugang[]" id="den-tele" value="den Telefonzugang">
+                                        <span>den Telefonzugang</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="zugang[]" id="den-tele" value="eigenen Fernseher">
+                                        <span>eigenen Fernseher</span>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END VI -->
+
+
+                    <!-- VII -->
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">7 / 7</div>
+
+                        <div class="title-formular">
+                            <span>VII.</span>
+                            <span>Anfallende Pflichten als Betreuerin (außer typischer Haushaltstätigkeiten)</span>
+                        </div>
+                        <!-- FORMULARZ  -->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="pname">Tägliche Hilfe beim</label>
+                                <br>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="taglichehilfe[]" value="Waschen">
+                                        <span>Waschen</span>
+                                    </label>
+                                </div>
+
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="taglichehilfe[]" value="Ankleiden">
+                                        <span>Ankleiden</span>
+                                    </label>
+                                </div>
+
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="taglichehilfe[]" value="Nahrungsaufnahme">
+                                        <span>Nahrungsaufnahme</span>
+                                    </label>
+                                </div>
+
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="taglichehilfe[]" class="js-radio"
+                                            data-target="#tatigkeiten321"
+                                            onclick="toggle_visibility('tatigkeiten321');">
+                                        <span>Leichte pflegerische Tätigkeiten</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <textarea id="tatigkeiten321" name="einsatzdauer"
+                                        style="min-height: 200px; min-width: 100%; display:none;"></textarea>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="spazieren[]" value="spazieren gehen">
+                                        <span>spazieren gehen</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="spazieren[]" value="mit Gehstock">
+                                        <span>mit Gehstock</span>
+                                    </label>
+                                </div>
+
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="spazieren[]" value="mit Gehhilfe">
+                                        <span>mit Gehhilfe</span>
+                                    </label>
+                                </div>
+
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="spazieren[]" value="im Rollstuhl"
+                                            data-target="#tatigkeiten324">
+                                        <span>im Rollstuhl</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <label for="pname">Tägliche Betreuung</label>
+                                <br>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="betreuung[]" value="Aktivierende Betreuung">
+                                        <span>Aktivierende Betreuung</span>
+                                    </label>
+                                </div>
+
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="betreuung[]" value="Wechseln der Windeln">
+                                        <span>Wechseln der Windeln</span>
+                                    </label>
+                                </div>
+
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="betreuung[]" class="js-radio"
+                                            data-target="#betreuung083" value="Anderes"
+                                            onclick="toggle_visibility('betreuung083');">
+                                        <span>Anderes</span>
+                                    </label>
+                                </div>
+                                <div id="betreuung083" class="input-field col s12" style="display: none">
+                                    <textarea name="anderebetreuung"></textarea>
+                                </div>
+
+                            </div>
+
+
+                            <div class="input-field col s12">
+                                <label for="pname">Kommunikationsfähigkeit</label>
+                                <br>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="communicationskills" value="vollständig erhalten">
+                                        <span>vollständig erhalten</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="input-field col s12">
+                                <label>Eingeschränkt bezüglich:</label>
+                                <br>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="eingeschrankt[]" value="Sehen">
+                                        <span>Sehen</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="eingeschrankt[]" value="Hören">
+                                        <span>Hören</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="eingeschrankt[]" value="Sprechen">
+                                        <span>Sprechen</span>
+                                    </label>
+                                </div>
+                                <div class="input-field col l4 m6 s12">
+                                    <label>
+                                        <input type="checkbox" name="eingeschrankt[]" value="Verstehen">
+                                        <span>Verstehen</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="input-field col s12">
+                                <span style="font-size:20px">
+                                    Ich versichere, dass die zuvor gemachten Angaben
+                                    vollständig und richtig sind.Unrichtige oder unvollständige
+                                    Angaben führen unter Umständen zu Mehrkosten oder
+                                    Vertragskündigung. -Beide Parteien verpflichten sich,
+                                    die in diesem Vertrag getroffenen Vereinbarungen vertraulich
+                                    zu behandeln und nicht an Dritte weiterzugeben.
+                                </span>
+                            </div>
+                            <button class="btn waves-effect waves-light" type="submit" name="action">senden<i
+                                    class="material-icons right">send</i>
+                                <!-- onclick="alert('Hello world!') info ze zostało wysłane -->
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                    <!--END VII -->
+
+                    <!-- buttons  -->
+
+                    <a class="prev btn " onclick="plusSlides(-1)">&#10094; früher</a>
+
+                    <a class="next btn " onclick="plusSlides(1)">nächste &#10095;</a>
+
+
+
+                </form>
+            </div>
+            <!-- </form> -->
+            <!-- na sam koniec po 7 -->
+
+
+
+        </main>
+        <footer id=" contact">
+            <section class="contact">
+                <p>Postanschrift:<br>
+                    <br>
+                    <br> Ewa Galczak<br> 00352 621 577 514
+                    <br> email: info@homesweethome.lu
+                </p>
+            </section>
+            <figure>
+                <img src="img/homesweethome.png" alt="Firmenlogo">
+            </figure>
+
+        </footer>
+
+    </div>
+
+    <!-- KOLEJNOSC linkow wazne JQ na poczatek działa navigacja menu ale klik checot nie -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <!-- Compiled and minified JavaScript -->
+    <!-- dzieki temu działa rozwijanie  dodanie drugiej osoby -->
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            // dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <!-- materialize  Select -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
+    <!-- show and clear textarea-checbox -->
+    <script type="text/javascript">
+        function toggle_visibility(id) {
+            var e = document.getElementById(id);
+            if (e.style.display == 'block')
+                e.style.display = 'none';
+            else
+                e.style.display = 'block';
+        }
+    </script>
+
+    <script>
+        $('.datepicker').datepicker({
+            yearRange: [1910, 2050],
+            firstDay: 1,
+            format: 'yyyy-mm-dd',
+            i18n: {
+                months: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August',
+                    'September', 'Oktober', 'November', 'Dezember'
+                ],
+                monthsShort: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt',
+                    'Nov', 'Dez'
+                ],
+                weekdays: ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag',
+                    'Samstag'
+                ],
+                weekdaysShort: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'],
+                weekdaysLetter: ['S', 'M', 'D', 'M', 'D', 'F', 'S'],
+                cancel: 'Zurück',
+                done: 'ok',
+            }
+
+        });
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home Sweet Home</title>
+    <style>
+        @media all and (-ms-high-contrast:none) {
+
+            *::-ms-backdrop,
+            .big-text,
+            .photo {
+                display: inline;
+                overflow: hidden;
+            }
+        }
+
+
+        @font-face {
+            font-family: 'BloggerSans';
+            src: url('fonts/BloggerSans.eot');
+            /* IE9 Compat Modes */
+            src: url('fonts/BloggerSans.eot?#iefix') format('embedded-opentype'),
+                /* IE6-IE8 */
+                url('fonts/BloggerSans.woff') format('woff'),
+                /* Modern Browsers */
+                url('fonts/BloggerSans.ttf') format('truetype'),
+                /* Safari, Android, iOS */
+                url('fonts/BloggerSans.svg#BloggerSans') format('svg');
+            /* Legacy iOS */
+            font-style: normal;
+            font-weight: normal;
+            text-rendering: optimizeLegibility;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="zusammenarbeit.html">Zusammenarbeit</a>
+                    </li>
+                    <li>
+                        <a href="formular.html">Formular</a>
+                    </li>
+                    <li>
+                        <a href="#kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- <section class="slider" id="home"> -->
+            <section class="slider">
+                <div class="big-text">
+                    <h1>HOME<br><span>SWEET</span><br>HOME</h1>
+                    <div class="small-text">
+                        <p>“Überall ist es schön,
+                            <br>
+                            aber am schönsten ist es zu Hause”
+                        </p>
+                        <div class="small-text-two">
+                            <p>-Haushaltshilfe für
+                                <br>
+                                pflegedürftige Menschen"
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="img/img1.png" alt="für ältere Menschen in Luxemburg Pflege">
+                </div>
+
+            </section>
+
+        </header>
+        <main class="home">
+            <div class="textanddescription">
+                <p>Schreiben sie uns an!</p>
+                <span>Schreiben Sie uns an wenn du irgendwelche Fragen hast oder wenn du genaue Mitteilungen brauchst.
+                    Wir schreiben sobald wie möglich zurück.</span>
+            </div>
+            <div class="row">
+                <form class="col s12" action="" method="POST">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" name="from_name" class="validate">
+                            <label for="icon_prefix">Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" type="email" name="from_email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">subject</i>
+                            <textarea id="subject" name="mail_subject" class="materialize-textarea"></textarea>
+                            <label for="subject">Betreff der nachricht</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">message</i>
+                            <textarea id="textarea1" name="mail_body" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Textnachrichten</label>
+                        </div>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit<i
+                                class="material-icons right">send</i>
+                        </button>
+
+                    </div>
+                </form>
+
+
+            </div>
+        </main>
+        <footer id="contact">
+            <section class="contact">
+                <p>Postanschrift:<br>
+                    <br>
+                    <br> Ewa Galczak<br> 00352 621 577 514
+                    <br> email: info@homesweethome.lu
+                </p>
+            </section>
+            <figure>
+                <img src="img/homesweethome.png" alt="Firmenlogo">
+            </figure>
+
+        </footer>
+
+
+    </div>
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
